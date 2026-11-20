@@ -1,5 +1,5 @@
 (function () {
-  var views = ["terms", "privacy"];
+  var views = ["terms", "privacy", "delete"];
   var back = document.getElementById("back");
   var title = document.getElementById("page-title");
   var navigated = false;
