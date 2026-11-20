@@ -53,6 +53,12 @@ h2{margin:0 0 .5rem;font-size:var(--fs-h2);line-height:1.3;font-weight:700;color
 .card li{position:relative;padding-left:1.15rem;margin:0 0 .4rem}
 .card li::before{content:"";position:absolute;left:.15rem;top:.6em;width:.4rem;height:.4rem;border-radius:50%;background:var(--green)}
 
+/* Numbered steps (delete account page) */
+.card ol.steps{list-style:none;counter-reset:step;margin:0 0 .9rem;padding:0}
+.card ol.steps li{counter-increment:step;position:relative;padding-left:2.1rem;margin:0 0 .6rem}
+.card ol.steps li::before{content:counter(step);position:absolute;left:0;top:.1em;width:1.45rem;height:1.45rem;border-radius:50%;background:var(--green);color:var(--card);font-size:.8125rem;font-weight:700;line-height:1.45rem;text-align:center}
+.card strong{color:var(--ink);font-weight:600}
+
 .hidden{display:none}
 
 /* Footer */
